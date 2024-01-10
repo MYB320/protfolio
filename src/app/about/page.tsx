@@ -6,7 +6,7 @@ import { Mouse } from 'lucide-react'
 export default function page() {
   return (
     <>
-      <section className='relative flex justify-center items-center h-[100dvh] '>
+      <section className='relative flex justify-center items-center h-screen'>
         <div className='max-w-screen-2xl flex flex-col sm:flex-row items-center gap-12 w-full p-5 sm:p-12 border rounded-3xl bg-muted/60 backdrop-blur-sm'>
           <AboutMe />
         </div>
