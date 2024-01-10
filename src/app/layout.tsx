@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/modules/Theme'
 import { Toaster } from '@/components/ui/sonner'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import Navbar from '@/modules/Navbar'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function RootLayout({
         sizes='<generated>'
       />
       <body className={poppins.className}>
+        <SpeedInsights />
         <ThemeProvider attribute='class' defaultTheme='system'>
           <TooltipProvider>
             <Navbar>{children}</Navbar>
