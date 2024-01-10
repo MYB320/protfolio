@@ -12,13 +12,13 @@ export const AboutMe = () => {
     <>
       <div className='flex flex-1 flex-col gap-4'>
         <Reveal>
-          <h2 className='text-center sm:text-start text-4xl sm:text-6xl font-semibold uppercase'>
+          <h2 className='text-start text-4xl sm:text-6xl font-semibold uppercase'>
             About <span className='text-primary'> me</span>
           </h2>
         </Reveal>
 
         <Reveal>
-          <p className='text-center sm:text-start text-base sm:text-xl'>
+          <p className='text-start text-base sm:text-xl'>
             Hi, my name is <span className='text-primary'>Mohamed Yasser</span>.
             I'm forward-thinking Software Engineer with background working
             productively in dynamic environments. Fluent in JavaScript and Rust
@@ -47,33 +47,33 @@ export const AboutMe = () => {
 
         <div className='flex flex-col'>
           <Reveal>
-            <p className='text-lg sm:text-xl text-center sm:text-start font-semibold'>
+            <p className='text-lg sm:text-xl text-start font-semibold'>
               Work Flow
             </p>
           </Reveal>
           <ul className='list-none pt-2 space-y-1 text-center'>
             <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-center sm:justify-start'>
-                <Check className='text-primary invisible sm:visible mr-0.5' />
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
                 <p>Agile Development & Scrum</p>
               </li>
             </Reveal>
             <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-center sm:justify-start'>
-                <Check className='text-primary invisible sm:visible mr-0.5' />
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
                 <p>Robust Programming & data structuring</p>
               </li>
             </Reveal>
             <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-center sm:justify-start'>
-                <Check className='text-primary invisible sm:visible mr-0.5' />
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
                 <p>Cross platforms Testing & Debugging</p>
               </li>
             </Reveal>
 
             <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-center sm:justify-start'>
-                <Check className='text-primary invisible sm:visible mr-0.5' />
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
                 <p>Cross Functional Teams</p>
               </li>
             </Reveal>

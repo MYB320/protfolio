@@ -22,7 +22,7 @@ export default async function Projects({
   const maxPage = Math.ceil(count / pageLimit)
 
   return (
-    <section className='h-[100svh] pt-10 pb-24'>
+    <section className='h-[100svh] my-10'>
       <div className='flex justify-between items-center'>
         <h2 className='flex-1 text-4xl sm:text-6xl font-bold uppercase'>
           Proje<span className='text-primary'>cts</span>

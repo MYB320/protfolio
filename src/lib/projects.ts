@@ -38,3 +38,16 @@ export const getProject = async ({ query }: { query?: string }) => {
   const project = await db.projects.findUnique(options)
   return { project }
 }
+
+export const createNewHiring = async (data: {
+  name: string
+  email: string
+  tel: string
+  type: $Enums.Type
+  message: string
+}) => {
+  const hires = await db.hires.create({
+    data,
+  })
+  return hires
+}
