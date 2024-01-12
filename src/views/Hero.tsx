@@ -1,9 +1,6 @@
 'use client'
-// react-simple-typewriter
 import { Typewriter } from 'react-simple-typewriter'
-// framer-motion
 import { motion } from 'framer-motion'
-// utils
 import { transition } from '@/lib/transition'
 import { fadeIn } from '@/lib/variants'
 import { Button } from '@/components/ui/button'
@@ -26,7 +23,7 @@ export default function Hero() {
         transition={transition()}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className='w-full text-center xl:text-start uppercase'
       >
         <p className='text-4xl flex items-center justify-center sm:justify-start pb-2 '>
@@ -53,13 +50,16 @@ export default function Hero() {
         transition={transition()}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className='mt-10 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start text-secondary-foreground'
       >
         <HireMeModal />
-        <Button className='group transition-all py-2.5 px-8 text-lg text-bold w-full sm:w-fit text-primary-foreground'>
-          <Download size={16} className='mr-2' /> Download CV
-        </Button>
+        <a href='/favicon.png' download='myb-cv'>
+          <Button className='group transition-all py-2.5 px-8 text-lg text-bold w-full sm:w-fit text-primary-foreground'>
+            <Download size={16} className='mr-2 group-hover:animate-bounce' />{' '}
+            Download CV
+          </Button>
+        </a>
       </motion.div>
     </div>
   )

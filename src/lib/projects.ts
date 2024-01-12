@@ -46,8 +46,6 @@ export const createNewHiring = async (data: {
   type: $Enums.Type
   message: string
 }) => {
-  const hires = await db.hires.create({
-    data,
-  })
+  const hires = await db.hires.create({ data })
   return hires
 }

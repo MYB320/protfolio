@@ -15,6 +15,7 @@ import { getProject } from '@/lib/projects'
 import { Url } from 'next/dist/shared/lib/router/router'
 import Image from 'next/image'
 import { ScrollArea } from '@/components/ui/scroll-area'
+import { cn } from '@/lib/utils'
 
 export default async function Project({
   params,
@@ -56,7 +57,10 @@ export default async function Project({
           </div>
           <Card className='mb-6'>
             <CardHeader className='pb-2'>
-              <div>
+              <div className='space-x-2'>
+                {project?.inDev && (
+                  <Badge variant='destructive'>In Development </Badge>
+                )}
                 <Badge className='border-primary' variant='outline'>
                   {catigoryBadge}
                 </Badge>
@@ -65,14 +69,6 @@ export default async function Project({
               <CardDescription>{project?.description}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className='py-2  border-t'>
-                <p className='font-semibold'>Technologies:</p>
-                <div className='space-x-1 pb-2'>
-                  {project?.technologies.map((technology) => (
-                    <Badge>{technology}</Badge>
-                  ))}
-                </div>
-              </div>
               {project?.resume != '' && (
                 <div className='py-2 border-t'>
                   <p className='font-semibold'>Description:</p>
@@ -81,6 +77,14 @@ export default async function Project({
                   </p>
                 </div>
               )}
+              <div className='py-2  border-t'>
+                <p className='font-semibold'>Technologies:</p>
+                <div className='space-x-1 pb-2'>
+                  {project?.technologies.map((technology) => (
+                    <Badge>{technology}</Badge>
+                  ))}
+                </div>
+              </div>
             </CardContent>
             <CardFooter className='space-x-4 justify-end'>
               {project?.repoUrl != '' && (

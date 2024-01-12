@@ -77,9 +77,9 @@ export const HireMeModal = () => {
       <DrawerTrigger asChild>
         <Button
           variant='secondary'
-          className='py-2.5 px-8 text-lg text-bold w-full sm:w-fit'
+          className='group transition-all py-2.5 px-8 text-lg text-bold w-full sm:w-fit'
         >
-          <UserCheck size={16} className='mr-2' />
+          <UserCheck size={16} className='mr-2 group-hover:animate-pulse' />
           Hire me
         </Button>
       </DrawerTrigger>

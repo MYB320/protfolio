@@ -17,6 +17,7 @@ model Projects {
   slug         String   @unique
   resume       String
   description  String
+  inDev        Boolean  @default(false)
   category     Category
   technologies String[]
   imgaes       String[]
