@@ -30,7 +30,7 @@ export const AboutMe = () => {
           transition={transition()}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className='flex items-center justify-center xl:justify-start gap-6 py-4'
         >
           <IconLink name='Gihub' link='https://github.com/myb320'>
@@ -87,7 +87,7 @@ export const AboutMe = () => {
           transition={transition()}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           src='/about-illustration.svg'
           alt=''
           className='sm:w-fit w-56 hover:animate-wiggle transition-all'

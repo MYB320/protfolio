@@ -15,14 +15,12 @@ export default function page() {
           <p className='font-semibold'>scroll down</p>
         </div>
       </section>
-      <div className='absolute bottom-0 left-0 w-full h-[1px] bg-divider' />
-      <section className='flex justify-center items-center h-[100dvh] '>
+      <section className='flex justify-center items-center h-screen'>
         <div className='max-w-screen-2xl flex flex-col sm:flex-row items-center gap-12 w-full p-5 sm:p-12 border rounded-3xl bg-muted/60 backdrop-blur-sm'>
           <Education />
         </div>
       </section>
-      <div className='absolute bottom-0 left-0 w-full h-[1px] bg-divider' />
-      <section className='flex justify-center items-center h-[100dvh] '>
+      <section className='flex justify-center items-center h-screen'>
         <div className='max-w-screen-2xl flex flex-col sm:flex-row items-center gap-12 w-full p-5 sm:p-12 border rounded-3xl bg-muted/60 backdrop-blur-sm'>
           <Skills />
         </div>

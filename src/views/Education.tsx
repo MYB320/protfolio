@@ -56,7 +56,7 @@ export const Education = () => {
           transition={transition()}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           src='/certificate.svg'
           alt=''
           className='sm:w-3/5 w-0 hover:animate-wiggle transition-all'

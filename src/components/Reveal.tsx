@@ -23,7 +23,7 @@ const Reveal: FC<RevealProps> = ({ children }) => {
         }}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={transition()}
       >
         {children}
@@ -33,7 +33,7 @@ const Reveal: FC<RevealProps> = ({ children }) => {
         initial='hidden'
         transition={{ duration: 0.75, ease: 'easeIn' }}
         whileInView='visible'
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className='absolute inset-0 bg-primary z-10'
       ></motion.div>
     </div>

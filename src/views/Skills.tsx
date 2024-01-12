@@ -205,7 +205,7 @@ export default function Skills() {
           transition={transition()}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           src='/multitasling.svg'
           alt=''
           className='sm:w-4/5 w-0 hover:animate-wiggle transition-all'
