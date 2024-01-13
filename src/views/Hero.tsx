@@ -54,7 +54,7 @@ export default function Hero() {
         className='mt-10 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start text-secondary-foreground'
       >
         <HireMeModal />
-        <a href='/favicon.png' download='myb-cv'>
+        <a href='/myb-cv.pdf' download='myb-cv'>
           <Button className='group transition-all py-2.5 px-8 text-lg text-bold w-full sm:w-fit text-primary-foreground'>
             <Download size={16} className='mr-2 group-hover:animate-bounce' />{' '}
             Download CV
