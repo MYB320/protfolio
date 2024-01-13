@@ -44,41 +44,6 @@ export const AboutMe = () => {
             <Instagram className='group-hover:text-primary' />
           </IconLink>
         </motion.div>
-
-        <div className='flex flex-col'>
-          <Reveal>
-            <p className='text-lg sm:text-xl text-start font-semibold'>
-              Work Flow
-            </p>
-          </Reveal>
-          <ul className='list-none pt-2 space-y-1 text-center'>
-            <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-start'>
-                <Check className='text-primary sm:visible mr-0.5' />
-                <p>Agile Development & Scrum</p>
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-start'>
-                <Check className='text-primary sm:visible mr-0.5' />
-                <p>Robust Programming & data structuring</p>
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-start'>
-                <Check className='text-primary sm:visible mr-0.5' />
-                <p>Cross platforms Testing & Debugging</p>
-              </li>
-            </Reveal>
-
-            <Reveal>
-              <li className='text-base sm:text-lg flex items-center justify-start'>
-                <Check className='text-primary sm:visible mr-0.5' />
-                <p>Cross Functional Teams</p>
-              </li>
-            </Reveal>
-          </ul>
-        </div>
       </div>
 
       <div className='flex-1 flex items-center justify-center my-auto'>

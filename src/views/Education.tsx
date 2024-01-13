@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { scale } from '@/lib/variants'
 import { transition } from '@/lib/transition'
 import Reveal from '@/components/Reveal'
+import { Check } from 'lucide-react'
 
 export const Education = () => {
   return (
@@ -14,7 +15,7 @@ export const Education = () => {
               Educat<span className='text-primary'>ion</span>
             </h2>
           </Reveal>
-          <div className='my-4 py-2 felx justify-center w-fit'>
+          <div className='py-2 felx justify-center w-fit'>
             <Reveal>
               <h3 className='pb-2 text-xl sm:text-3xl uppercase font-semibold items-center'>
                 University 20 August 1955 -{' '}
@@ -49,6 +50,41 @@ export const Education = () => {
             </Reveal>
           </div>
         </div>
+        <hr />
+        <div className='flex flex-col py-2'>
+          <Reveal>
+            <p className='text-xl sm:text-3xl uppercase text-start font-semibold'>
+              Work Flow
+            </p>
+          </Reveal>
+          <ul className='list-none pt-2 space-y-1 text-center'>
+            <Reveal>
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
+                <p>Agile Development & Scrum</p>
+              </li>
+            </Reveal>
+            <Reveal>
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
+                <p>Robust Programming & data structuring</p>
+              </li>
+            </Reveal>
+            <Reveal>
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
+                <p>Cross platforms Testing & Debugging</p>
+              </li>
+            </Reveal>
+
+            <Reveal>
+              <li className='text-base sm:text-lg flex items-center justify-start'>
+                <Check className='text-primary sm:visible mr-0.5' />
+                <p>Cross Functional Teams</p>
+              </li>
+            </Reveal>
+          </ul>
+        </div>
       </div>
       <div className='flex flex-1 items-center justify-center my-auto'>
         <motion.img
@@ -58,8 +94,7 @@ export const Education = () => {
           whileInView='visible'
           viewport={{ once: true }}
           src='/certificate.svg'
-          alt=''
-          className='sm:w-3/5 w-0 hover:animate-wiggle transition-all'
+          className='sm:w-[70%] w-0 hover:animate-wiggle transition-all'
         />
       </div>
     </>
