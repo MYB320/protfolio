@@ -17,8 +17,8 @@ export const Education = () => {
           </Reveal>
           <div className='py-2 felx justify-center w-fit'>
             <Reveal>
-              <h3 className='pb-2 text-xl sm:text-3xl uppercase font-semibold items-center'>
-                University 20 August 1955 -{' '}
+              <h3 className='pb-2 text-center xl:text-start text-xl sm:text-3xl uppercase font-semibold items-center'>
+                University 20 August 1955 &nbsp;
                 <span className='text-primary sm:text-2xl'>Skikda, DZ</span>
               </h3>
             </Reveal>
@@ -53,7 +53,7 @@ export const Education = () => {
         <hr />
         <div className='flex flex-col py-2'>
           <Reveal>
-            <p className='text-xl sm:text-3xl uppercase text-start font-semibold'>
+            <p className='text-center sm:text-start text-xl sm:text-3xl uppercase font-semibold'>
               Work Flow
             </p>
           </Reveal>

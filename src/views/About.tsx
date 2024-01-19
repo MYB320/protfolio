@@ -12,13 +12,13 @@ export const AboutMe = () => {
     <>
       <div className='flex flex-1 flex-col gap-4'>
         <Reveal>
-          <h2 className='text-start text-4xl sm:text-6xl font-semibold uppercase'>
+          <h2 className='text-center xl:text-start text-4xl sm:text-6xl font-bold uppercase mb-6'>
             About <span className='text-primary'> me</span>
           </h2>
         </Reveal>
 
         <Reveal>
-          <p className='text-start text-base sm:text-xl'>
+          <p className='text-center sm:text-start text-base sm:text-xl'>
             Hi, my name is <span className='text-primary'>Mohamed Yasser</span>.
             I'm forward-thinking Software Engineer with background working
             productively in dynamic environments. Fluent in JavaScript and Rust
